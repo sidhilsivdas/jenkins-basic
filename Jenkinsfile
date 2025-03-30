@@ -20,8 +20,8 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 cd myapp
-                python3 hello.py
-                python3 hello.py --name=Brad
+                python3 ./venv/hello.py
+                python3 ./venv/hello.py --name=Brad
                 '''
             }
         }
